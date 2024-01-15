@@ -1,0 +1,13 @@
+.DS_Store
+terraform/AWS/.terraform.lock.hcl
+terraform/AWS/aws_eks_deployment.destroy.tfplan
+terraform/AWS/aws_eks_deployment.tfplan
+terraform/AWS/secrets.tfvars
+terraform/AWS/terraform.tfstate
+terraform/AWS/terraform.tfstate.backup
+terraform/AWS/.terraform/modules/modules.json
+terraform/AWS/.terraform/providers/registry.terraform.io/hashicorp/aws/5.32.0/darwin_amd64/terraform-provider-aws_v5.32.0_x5
+terraform/AWS/.terraform/providers/registry.terraform.io/hashicorp/cloudinit/2.3.3/darwin_amd64/terraform-provider-cloudinit_v2.3.3_x5
+terraform/AWS/.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.25.2/darwin_amd64/terraform-provider-kubernetes_v2.25.2_x5
+terraform/AWS/.terraform/providers/registry.terraform.io/hashicorp/time/0.10.0/darwin_amd64/terraform-provider-time_v0.10.0_x5
+terraform/AWS/.terraform/providers/registry.terraform.io/hashicorp/tls/4.0.5/darwin_amd64/terraform-provider-tls_v4.0.5_x5
