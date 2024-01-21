@@ -29,7 +29,7 @@ variable "name" {
 variable "region" {
   type        = string
   description = "Choose a region to deploy your AWS resources." # Need User input to proceed for deployments.
-  default     = ""
+  default     = "ap-south-1"
 }
 
 variable "vpc_cidr" {
