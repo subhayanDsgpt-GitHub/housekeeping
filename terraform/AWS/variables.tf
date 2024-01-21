@@ -11,13 +11,13 @@
 variable "AWS_ACCESS_KEY_ID" {
   type        = string
   description = "Use secrets.tfvars to pass the secrets securely."
-  sensitive   = true
+  default     = ""
 }
 
 variable "AWS_SECRET_ACCESS_KEY" {
   type        = string
   description = "Use secrets.tfvars to pass the secrets securely."
-  sensitive   = true
+  default     = ""
 }
 
 variable "name" {
@@ -29,6 +29,7 @@ variable "name" {
 variable "region" {
   type        = string
   description = "Choose a region to deploy your AWS resources." # Need User input to proceed for deployments.
+  default     = ""
 }
 
 variable "vpc_cidr" {
