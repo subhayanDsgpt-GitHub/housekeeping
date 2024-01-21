@@ -1,12 +1,12 @@
 # Author:           Subhayan Dasgupta
 # Date Created:     11/01/2024
-# Date Modified:    14/01/2024
+# Date Modified:    22/01/2024
 
 # Description:
 # Deploy an AWS EKS managed cluster using Terraform.
 
 # Usage:
-# Always use secrets.tfvars file to pass the following AWS credentials.
+# Always use secrets.tfvars file to pass the following AWS credentials, if run locally.
 #
 # AWS_ACCESS_KEY_ID       = "<AKIAIOSFODNN7EXAMPLE>"
 # AWS_SECRET_ACCESS_KEY   = "<wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY>"
@@ -31,9 +31,7 @@ terraform {
   }
 }
 
-provider "aws" {
-  region = var.region
-}
+provider "aws" {}
 
 # Export the name of the Availability Zones (AZ)s
 data "aws_availability_zones" "available" {}
