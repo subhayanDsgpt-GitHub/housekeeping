@@ -31,7 +31,9 @@ terraform {
   }
 }
 
-provider "aws" {}
+provider "aws" {
+  region = var.region
+}
 
 # Export the name of the Availability Zones (AZ)s
 data "aws_availability_zones" "available" {}
