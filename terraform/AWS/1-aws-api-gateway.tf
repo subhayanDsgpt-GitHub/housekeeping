@@ -1,6 +1,6 @@
 # Author:           Subhayan Dasgupta
 # Date Created:     24/01/2024
-# Date Modified:    24/01/2024
+# Date Modified:    25/01/2024
 
 # Description:
 # Deploy AWS managed REST API Gateway using Terraform.
@@ -15,6 +15,7 @@
 #
 # Acknowledgement: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/api_gateway_rest_api
 
+# Deploy an AWS managed REST API Gateway.
 resource "aws_api_gateway_rest_api" "test_aws_api_gateway_rest_api" {
   body = jsonencode({
     openapi = "3.0.1"
@@ -22,6 +23,8 @@ resource "aws_api_gateway_rest_api" "test_aws_api_gateway_rest_api" {
       title   = "${var.prefix}RESTAPIGateway"
       version = "1.0"
     }
+
+    # Set up a context path for REST.
     paths = {
       "/path1" = {
         get = {
@@ -43,6 +46,7 @@ resource "aws_api_gateway_rest_api" "test_aws_api_gateway_rest_api" {
   }
 }
 
+# Deploy an AWS managed REST API Gateway Deployment.
 resource "aws_api_gateway_deployment" "test_aws_api_gateway_deployment" {
   rest_api_id = aws_api_gateway_rest_api.test_aws_api_gateway_rest_api.id
 
@@ -55,6 +59,7 @@ resource "aws_api_gateway_deployment" "test_aws_api_gateway_deployment" {
   }
 }
 
+# Deploy an AWS managed REST API Gateway Stage.
 resource "aws_api_gateway_stage" "test_aws_api_gateway_stage" {
   deployment_id = aws_api_gateway_deployment.test_aws_api_gateway_deployment.id
   rest_api_id   = aws_api_gateway_rest_api.test_aws_api_gateway_rest_api.id

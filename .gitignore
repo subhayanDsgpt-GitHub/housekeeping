@@ -25,3 +25,4 @@ terraform/AWS_EKS/.terraform.lock.hcl
 terraform/AWS_EKS/aws_eks_deployment.destroy.tfplan
 terraform/AWS_EKS/aws_eks_deployment.tfplan
 terraform/AWS/sample.tfplan
+terraform/AWS/sample.destroy.tfplan
