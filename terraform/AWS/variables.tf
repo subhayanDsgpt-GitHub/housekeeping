@@ -14,19 +14,19 @@ variable "prefix" {
   default     = "SubhayanDsPoC"
 }
 
-variable "AWS_ACCESS_KEY_ID" {
-  type        = string
-  description = "Use secrets.tfvars only to pass the secrets securely invoked locally. Use ENVIRONMENT_VARIABLES in Terraform Cloud."
-  sensitive   = true
-}
+# variable "AWS_ACCESS_KEY_ID" {
+#  type        = string
+#  description = "Use secrets.tfvars only to pass the secrets securely invoked locally. Use ENVIRONMENT_VARIABLES in Terraform Cloud."
+#  sensitive   = true
+# }
 
-variable "AWS_SECRET_ACCESS_KEY" {
-  type        = string
-  description = "Use secrets.tfvars only to pass the secrets securely invoked locally. Use ENVIRONMENT_VARIABLES in Terraform Cloud."
-  sensitive   = true
-}
+# variable "AWS_SECRET_ACCESS_KEY" {
+#  type        = string
+#  description = "Use secrets.tfvars only to pass the secrets securely invoked locally. Use ENVIRONMENT_VARIABLES in Terraform Cloud."
+#  sensitive   = true
+# }
 
-variable "AWS_REGION" {
-  type        = string
-  description = "Choose an AWS Region to deploy the managed resources."
-}
+# variable "AWS_REGION" {
+#  type        = string
+#  description = "Choose an AWS Region to deploy the managed resources."
+# }
