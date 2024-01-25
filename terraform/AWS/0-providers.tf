@@ -29,7 +29,7 @@ terraform {
 }
 
 provider "aws" {
-  access_key = var.AWS_ACCESS_KEY_ID # Use ENVIRONMENT_VARIABLES on Terraform Cloud to store and pass the credentials securely.
-  secret_key = var.AWS_SECRET_ACCESS_KEY # Use ENVIRONMENT_VARIABLES on Terraform Cloud to store and pass the credentials securely.
-  region     = var.AWS_REGION # Use ENVIRONMENT_VARIABLES on Terraform Cloud.
+  # access_key = var.AWS_ACCESS_KEY_ID # Use ENVIRONMENT_VARIABLES on Terraform Cloud to store and pass the credentials securely.
+  # secret_key = var.AWS_SECRET_ACCESS_KEY # Use ENVIRONMENT_VARIABLES on Terraform Cloud to store and pass the credentials securely.
+  # region     = var.AWS_REGION # Use ENVIRONMENT_VARIABLES on Terraform Cloud.
 }
